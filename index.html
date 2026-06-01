@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-sketch Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="header"><!--header-->
+        
+        <h1 class="animate-character">
+            Etch-a-sketch
+        </h1>
+
+        <div id="form" class="form">
+            <p>New grid size:</p><input type="text" id="user-number" class="user-number">
+            <p id="copy-input"></p>
+            <button id="user-submit" class="user-submit">Submit</button>
+        </div>
+
+        <p id="prompt"></p>
+
+        <div id="buttons"><!--buttons-->
+            <form id="button-container"><!--button-container-->
+                <input type="radio" id="black-pen" name="pen" value="black-pen"><label for="black-pen">Black</label>
+                <input type="radio" id="red-pen" name="pen" value="red-pen"><label for="red-pen">Red</label>
+                <input type="radio" id="blue-pen" name="pen" value="blue-pen"><label for="blue-pen">Blue</label>
+                <input type="radio" id="rainbow" name="pen" value="rainbow"><label for="rainbow">Rainbow</label>
+                <input type="radio" id="eraser" name="pen" value="eraser"><label for="eraser">Eraser</label>
+            </form><!--button-container-->
+
+            <button id="clear-button">
+                Clear
+            </button>
+
+        </div><!--buttons-->
+
+    </div><!--header-->
+
+    <div class="canvas">
+        <div class="container"></div>
+    </div>
+
+    <div id="footer"><!--footer-->
+        
+        <p>
+            2026 | Muimi Nzangi for <a href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch" target="_blank">The Odin Project</a>
+        </p>
+
+    </div><!--footer-->
+
+    <script src="/scripts/script.js"></script>
+    
+</body>
+</html>
